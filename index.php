@@ -1,20 +1,12 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <script src="js/modernizr.js"></script>
-  </head>
-  <body>
-  <div class="container">
+<?php
+include('includes/header.php');
+?>
+
      <div class="row">
       <div class="large-12 columns"> 
-        <h1>Projet sur l'optimisation des requêtes</h1>
+        <h1>Projet sur la normalisation</h1>
         <p>
-          Entrez les dépendances fonctionnelles séparées d'une virgule.
+          Entrez les attributs des dépendances fonctionnelles séparés d'une virgule.
         </p>
       </div>
     </div>
@@ -34,6 +26,28 @@
                 <input type="text" name="dpfd0">
               </div>
             </div>
+            <div class="row">
+              <div class="small-5 columns">
+                <input type="text" name="dpfg1" >
+              </div>
+              <div class="small-2 columns">
+                <center><img src="img/fleche.png" alt="->" /></center>
+              </div>
+              <div class="small-5 columns">
+                <input type="text" name="dpfd1">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-5 columns">
+                <input type="text" name="dpfg2" >
+              </div>
+              <div class="small-2 columns">
+                <center><img src="img/fleche.png" alt="->" /></center>
+              </div>
+              <div class="small-5 columns">
+                <input type="text" name="dpfd2">
+              </div>
+            </div>
           </div>
           <div class="row">
             <div class="large-4 columns">
@@ -47,12 +61,4 @@
       </div>
     </form>
     
-    <script src="js/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-    <script src="js/app.js"></script>
-  </div>
-  </body>
-</html>
+<?php include('includes/footer.php'); ?>
