@@ -4,8 +4,10 @@ include('Dfs.php');
 
 include('includes/header.php');
 ?>
+<br>
 <div class="row">
 <div class="large-12 columns">
+<div class="panel callout radius">
 <?php
 
 $nbrChamps = count($_POST);
@@ -19,7 +21,9 @@ if($nbrChamps>1){
 			$dfs->add(new Df($_POST['dpfg'.$i], $_POST['dpfd'.$i]));
 	}
 
-	echo "<p><strong>Clé primaire:</strong> ".implode(", ", $dfs->getPrimaryKey());
+	//echo "<strong>Clé primaire:</strong> ".implode(", ", $dfs->getPrimaryKey())."<br>";
+	$dfs->toString();
+	$dfs->getWichNormale();
 
 
 	
@@ -29,6 +33,7 @@ if($nbrChamps>1){
 	echo "Entrez une dépendance fonctionnelle au moins.";
 }
 ?>
+</div>
 </div>
 </div>
 <?php
