@@ -24,6 +24,7 @@ if($nbrChamps>1){
 	//echo "<strong>Clé primaire:</strong> ".implode(", ", $dfs->getPrimaryKey())."<br>";
 	$dfs->toString();
 	$dfs->getWichNormale();
+	$dfs->decomposition();
 
 
 	
