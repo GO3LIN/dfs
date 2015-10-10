@@ -1,8 +1,8 @@
 <?php
+include('includes/header.php');
 include('Df.php');
 include('Dfs.php');
 
-include('includes/header.php');
 ?>
 <br>
 <div class="row">
